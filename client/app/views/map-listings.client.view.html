@@ -8,3 +8,17 @@
     https://angular-ui.github.io/angular-google-maps/#!/api/markers
     https://angular-ui.github.io/angular-google-maps/#!/api/windows
   -->
+
+
+<div ng-controller="ListingsController" ng-init="find()">
+    <ui-gmap-google-map center="map.center" zoom="map.zoom">
+       <ui-gmap-markers models="listings" coords="'coordinates'" icon ="'icon'" idkey ="'_id'">
+           <ui-gmap-windows show="show">
+               <div ng-non-bindable>
+                   <br><h4>{{name}}</h4><br>
+                   <a href="listings/{{_id}}">Go To Listing</a>
+               </div>
+           </ui-gmap-windows>
+       </ui-gmap-markers>
+   </ui-gmap-google-map>
+</div>

@@ -1,13 +1,17 @@
 {
-    "name": "Assignment4",
+    "name": "Assignment6",
     "version": "1.0.0",
     "description": "Routing server-side requests using ExpressJS",
     "main": "server.js",
     "author": "Medhir Bhargava",
     "license": "MIT",
+    "scripts": {
+        "start": "npm install && node server.js",
+        "postinstall": "bower install"
+    },
     "dependencies": {
         "body-parser": "^1.14.1",
-        "bower": "1.6.5",
+        "bower": "^1.8.2",
         "express": "^4.13.3",
         "mongoose": "^4.2.9",
         "morgan": "^1.6.1",
@@ -17,9 +21,5 @@
     "devDependencies": {
         "should": "^7.1.1",
         "supertest": "^1.1.0"
-    },
-    "scripts": {
-        "start": "node server.js",
-        "postinstall": "bower install"
     }
 }

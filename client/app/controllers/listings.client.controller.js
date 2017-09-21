@@ -6,8 +6,8 @@ angular.module('listings').controller('ListingsController', ['$scope', '$locatio
         latitude: 29.65163059999999,
         longitude: -82.3410518
       }, 
-      zoom: 14,
-      key: process.env.GOOG_MAP_KEY
+      zoom: 14
+//      key: process.env.GOOG_MAP_KEY
     }
       
     $scope.find = function() {
